@@ -13,7 +13,7 @@ public class CounterController {
 
     @GetMapping("/hello")
     public String count(){
-
+        // 测试
         long increment = redisTemplate.opsForValue().increment("count-people");
         return "有【"+ increment +"】人访问了这页面";
     }
